@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar",
+    "banner": "/components/banner/banner",
+    "search": "/components/search/search",
+    "classify": "/components/classify/classify",
+    "recommend": "/components/recommend/recommend",
+    "products": "/components/products/products"
+  }
+}

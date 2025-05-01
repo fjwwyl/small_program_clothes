@@ -1,0 +1,16 @@
+<!--components/recommend/recommend.wxml-->
+<view class="recommend">
+  <view>
+    <text class="recommend_title">推荐商品</text>
+    <text class="recommend_title_english">RECOMMEND</text>
+  </view>
+  <view class="recommend_card">
+    <view wx:for="{{recommendList}}" wx:key="index" class="card">
+      <image class="recommend_img" src="{{item.img}}"></image>
+      <view>{{item.title}}</view>
+      <view>
+        <text style="color:#FF5543;font-size: 24px;">￥{{item.price}}</text>
+      </view>
+    </view>
+  </view>
+</view>

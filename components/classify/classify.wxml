@@ -1,0 +1,14 @@
+<!--components/classify/classify.wxml-->
+
+<view class="classify">
+  <block wx:for="{{classes}}" wx:key="index">
+    <view class="class_cell_first" wx:if="{{index < maxLine }}">
+      <view class="class_cell_first_other" wx:if="{{index % maxLine }}">{{item.title}}</view>
+      <view class="class_cell_first_left" wx:else>{{item.title}}</view>
+    </view>
+    <view class="class_cell_other" wx:else>
+      <view class="class_cell_other_other" wx:if="{{index % maxLine }}">{{item.title}}</view>
+      <view class="class_cell_other_left" wx:else>{{item.title}}</view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,33 @@
+<view class="products">
+  <view class="products_header">
+    <view>
+      <text class="products_title">所有商品</text>
+      <text class="products_title_english">ALL PRODUCTS</text>
+    </view>
+    <view class="products_sort">
+      <button class="products_sort_button" hover-class="none">
+        <text>上新</text>
+        <c-icon class="" name="down" type="png" width="12" height="12">
+        </c-icon>
+      </button>
+      <button class="products_sort_button">
+        <text>销量</text>
+        <c-icon style name="down" type="png" width="12" height="12">
+        </c-icon>
+      </button>
+      <button class="products_sort_button">
+        <text>价格</text>
+        <c-icon name="down" type="png" width="12" height="12">
+        </c-icon>
+      </button>
+    </view>
+  </view>
+
+  <view>
+
+    fjw
+    fjw
+    fjw
+
+  </view>
+</view>

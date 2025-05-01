@@ -1,0 +1,52 @@
+/* components/classify/classify.wxss */
+.classify {
+  margin: 10px 0;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #000000;
+  font-weight: 600;
+}
+
+.class_cell_first  {
+  width: 25%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+
+.class_cell_first_left {
+  box-sizing: border-box;
+  border: 1px solid #707070;
+  height: 100%;
+}
+
+.class_cell_first_other {
+  box-sizing: border-box;
+  border: 1px solid #707070;
+  border-left: 0 !important;
+  height: 100%;
+}
+
+.class_cell_other{
+  width: 25%;
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+}
+
+.class_cell_other_left{
+  box-sizing: border-box;
+  border: 1px solid #707070;
+  height: 100%;
+  border-top: 0 !important;
+}
+
+.class_cell_other_other{
+  box-sizing: border-box;
+  border: 1px solid #707070;
+  height: 100%;
+  border-top: 0 !important;
+  border-left: 0 !important;
+}

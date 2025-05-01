@@ -1,0 +1,6 @@
+<!--components/search/search.wxml-->
+
+<view class="search">
+  <icon type="search" size="18"></icon>
+  <input class="search-input" disabled="true" type="text" auto-focus placeholder="请输入商品名称" placeholder-style="margin-left:20px;font-size:12px;" />
+</view>

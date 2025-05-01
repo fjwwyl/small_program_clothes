@@ -1,0 +1,32 @@
+/* components/recommend/recommend.wxss */
+
+.recommend {
+  padding: 0 10px;
+}
+
+.recommend_title {
+  color: #000000;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.recommend_title_english {
+  color: #000000;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.recommend_card {
+  height: 210px;
+  display: flex;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+.recommend_card .card{
+ 
+}
+
+.recommend_img {
+  height: 150px;
+  width: 150px;
+}
