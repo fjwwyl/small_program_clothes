@@ -1,0 +1,35 @@
+.products_sort {
+  display: flex;
+  align-items: center;
+}
+
+.products_sort_button {
+  width: 50px !important;
+  background-color: #FFFFFF;
+  color: #707070;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+
+  &.active {
+    color: #FF5543
+  }
+}
+
+
+.products_sort_icon {
+  display: flex;
+  align-items: center;
+}
+
+
+.products_content {
+  display: flex;
+  flex-wrap: wrap;
+
+  .content {
+    flex: 1;
+  }
+}

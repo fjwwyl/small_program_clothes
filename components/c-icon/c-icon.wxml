@@ -1,3 +1,0 @@
-<!--components/c-icon/c-icon.wxml-->
-<image src="{{src}}" style="{{style}}">
-</image>

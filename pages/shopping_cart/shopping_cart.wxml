@@ -1,2 +1,36 @@
-<!--pages/shopping_cart.wxml-->
-<text>pages/shopping_cart.wxml</text>
+<view class="cart">
+  <view class="header">
+    <view>
+      已选:{{selectGoods}}件商品
+    </view>
+    <van-button color="#FF5543" round size="small">管理</van-button>
+  </view>
+  <scroll-view scroll-y class="goods" enhanced show-scrollbar="{{false}}">
+    <view wx:for="{{ selectGoodsList }}" wx:key="index" class="good">
+      <van-checkbox value="{{ checkGood }}" checked-color="#FF5543" shape="round" bind:change="onChangeGood">
+      </van-checkbox>
+      <view class="detail">
+        <image src="{{item.img}}"></image>
+        <view class="content">
+          <view class="title">{{item.title}}</view>
+          <view class="other">
+            <van-button color="#F7F7F7" round size="mini">
+              <text style="color:#C0C0C0;margin-right: 5px;">{{item.color}},{{item.size}}</text>
+              <van-icon color="#C0C0C0" name="arrow-down" />
+            </van-button>
+          </view>
+          <view class="price">￥{{item.price}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="settlement">
+    <van-checkbox value="{{ checkAll }}" checked-color="#FF5543" shape="round" bind:change="onChange">
+      全选
+    </van-checkbox>
+    <view class="right">
+      <view class="content">合计：<text class="price">￥129</text></view>
+      <van-button color="#FF5543" round size="small">结算</van-button>
+    </view>
+  </view>
+</view>

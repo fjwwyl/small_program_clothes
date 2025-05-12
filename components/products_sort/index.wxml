@@ -1,0 +1,15 @@
+<!--components/products_sort/index.wxml-->
+<view class="products_sort">
+  <button bindtap="changeIcon" class="products_sort_button {{activeSort==='newIcon'?'active':''}}" data-icon="newIcon">
+    <text>上新</text>
+    <van-icon name="{{newIcon}}" />
+  </button>
+  <button bindtap="changeIcon" class="products_sort_button {{activeSort==='saleIcon'?'active':''}}" data-icon="saleIcon">
+    <text>销量</text>
+    <van-icon name="{{saleIcon}}" />
+  </button>
+  <button bindtap="changeIcon" class="products_sort_button {{activeSort==='priceIcon'?'active':''}}" data-icon="priceIcon">
+    <text>价格</text>
+    <van-icon name="{{priceIcon}}" />
+  </button>
+</view>

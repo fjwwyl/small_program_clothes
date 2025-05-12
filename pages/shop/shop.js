@@ -5,7 +5,40 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    activeKey: 0,
+    classesList: [{
+        title: "全部分类",
+        key: "all"
+      },
+      {
+        title: "裙子",
+        key: "skirt"
+      },
+      {
+        title: "上衣",
+        key: "tops"
+      },
+      {
+        title: "外套",
+        key: "coat"
+      },
+      {
+        title: "卫衣",
+        key: "hoodie"
+      },
+      {
+        title: "鞋子",
+        key: "shoes"
+      },
+      {
+        title: "裤子",
+        key: "pants"
+      },
+      {
+        title: "其他",
+        key: "other"
+      }
+    ],
   },
 
   /**

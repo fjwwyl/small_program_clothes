@@ -1,2 +1,10 @@
-<!--pages/shop/shop.wxml-->
-<text>pages/shop/shop.wxml</text>
+<search placeholder="输入名称、款式搜索"></search>
+<view class="shop">
+  <van-sidebar active-key="{{ activeKey }}">
+    <van-sidebar-item wx:for="{{ classesList }}" wx:key="index" title="{{item.title}}" />
+  </van-sidebar>
+  <view class="content">
+    <sort class="sort"></sort>
+    <scroll-prohucts></scroll-prohucts>
+  </view>
+</view>

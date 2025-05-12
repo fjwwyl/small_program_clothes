@@ -1,0 +1,16 @@
+<!--components/scroll-products/index.wxml-->
+<view>
+<!-- todo 使用滚动可以优化 -->
+  <van-row gutter="20" custom-class="products_row">
+    <van-col span="12" wx:for="{{list}}" wx:key="index">
+      <image src="../../assets/recommend/red.png"></image>
+      <view class="operation">
+        <view>
+          <view class="title">{{item.title}}</view>
+          <view class="price">￥{{item.price}}</view>
+        </view>
+        <van-icon name="add" color="#FF5543" size="24"/>
+      </view>
+    </van-col>
+  </van-row>
+</view>

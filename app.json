@@ -1,26 +1,21 @@
 {
+  "entryPagePath": "pages/index/index",
   "pages": [
     "pages/index/index",
     "pages/mine/mine",
     "pages/shop/shop",
-    "pages/shopping_cart/shopping_cart"
+    "pages/shopping_cart/shopping_cart",
+    "pages/login/login",
+    "pages/user_setting/index"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationBarTitleText": "喜娃传媒",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "renderer": "skyline",
-  "rendererOptions": {
-    "skyline": {
-      "defaultDisplayBlock": true,
-      "defaultContentBox": true,
-      "tagNameStyleIsolation": "legacy",
-      "disableABTest": true,
-      "sdkVersionBegin": "3.0.0",
-      "sdkVersionEnd": "15.255.255"
-    }
-  },
+  "renderer": "webview",
+  "rendererOptions": {},
   "tabBar": {
     "color": "#707070",
     "selectedColor": "#FF5543",

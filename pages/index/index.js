@@ -37,49 +37,23 @@ Page({
         key: "other"
       }
     ],
-    recommendList: [{
-        img: "../../assets/recommend/red.png",
-        title: "红色",
-        price: "123"
-      },
-      {
-        img: "../../assets/recommend/orange.png",
-        title: "橙色",
-        price: "123"
-      },
-      {
-        img: "../../assets/recommend/yellow.png",
-        title: "黄色",
-        price: "123"
-      },
-      {
-        img: "../../assets/recommend/green.png",
-        title: "绿色",
-        price: "123"
-      },
-      {
-        img: "../../assets/recommend/cyan.png",
-        title: "青色",
-        price: "123"
-      },
-      {
-        img: "../../assets/recommend/blue.png",
-        title: "蓝色",
-        price: "123"
-      },
-      {
-        img: "../../assets/recommend/purple.png",
-        title: "紫色",
-        price: "123"
-      }
-    ]
+    recommendList: []
   },
-  onShow() {
-
+  onReady() {
+    this.getData();
   },
   getData() {
-    api.get("http://192.168.31.158/users").then(res => {
-      console.log(res);
+    api.get("http://192.168.31.158/recommend").then(res => {
+      const {
+        code,
+        data,
+        message
+      } = res;
+      if (code === 200) {
+        this.setData({
+          recommendList: data
+        })
+      }
     })
   },
   onChooseAvatar(event) {

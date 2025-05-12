@@ -5,7 +5,59 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    selectGoods: 1,
+    checkAll: true,
+    checkGood: true,
+    selectGoodsList: [{
+        img: "../../assets/recommend/red.png",
+        title: "红色",
+        price: "123",
+        color: "黄色",
+        size: "all",
+      },
+      {
+        img: "../../assets/recommend/red.png",
+        title: "红色",
+        price: "123",
+        color: "黄色",
+        size: "all",
+      },
+      {
+        img: "../../assets/recommend/red.png",
+        title: "红色",
+        price: "123",
+        color: "黄色",
+        size: "all",
+      },
+      {
+        img: "../../assets/recommend/red.png",
+        title: "红色",
+        price: "123",
+        color: "黄色",
+        size: "all",
+      },
+      {
+        img: "../../assets/recommend/red.png",
+        title: "红色",
+        price: "123",
+        color: "黄色",
+        size: "all",
+      },
+      {
+        img: "../../assets/recommend/red.png",
+        title: "红色",
+        price: "123",
+        color: "黄色",
+        size: "all",
+      },
+      {
+        img: "../../assets/recommend/red.png",
+        title: "红色",
+        price: "123",
+        color: "黄色",
+        size: "all",
+      }
+    ]
   },
 
   /**
@@ -61,6 +113,14 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
+
+  },
+  onChange() {
+    this.setData({
+      checkAll: !this.data.checkAll
+    })
+  },
+  onChangeGood() {
 
   }
 })

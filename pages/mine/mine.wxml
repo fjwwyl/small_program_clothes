@@ -1,2 +1,61 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="mine">
+  <view class="head">
+    <view wx:if="{{!token}}" class="login">
+      <van-image width="50" height="50" src="/assets/head/default.png" />
+      <view bindtap="login" class="login-button">
+        请点击登录
+      </view>
+    </view>
+    <view wx:else class="logon">
+      <view class="userInfo">
+        <van-image width="50" height="50" src="{{userInfo.avatar}}" />
+        <text class="login-button">{{userInfo.nickName}}</text>
+      </view>
+      <view>
+        <van-button color="#4B6EEF" round size="small" bind:click="userSetting">设置</van-button>
+      </view>
+    </view>
+  </view>
+  <view class="order">
+    <view class="title">
+      <text>订单</text>
+    </view>
+    <view class="classify">
+      <view bindtap="handleTap">
+        <van-icon name="clock-o" size="24" />
+        <view>进行中</view>
+      </view>
+      <view bindtap="handleTap">
+        <van-icon name="certificate" size="24" />
+        <view>已结束</view>
+      </view>
+      <view bindtap="handleTap">
+        <van-icon name="notes-o" size="24" />
+        <view>全部订单</view>
+      </view>
+    </view>
+  </view>
+  <view class="service">
+    <view class="title">
+      <text>服务</text>
+    </view>
+    <view class="classify">
+      <view bindtap="handleTap">
+        <van-icon name="user-o" size="24" />
+        <view>个人信息</view>
+      </view>
+      <view bindtap="handleTap">
+        <van-icon name="balance-o" size="24" />
+        <view>消费记录</view>
+      </view>
+      <view bindtap="handleTap">
+        <van-icon name="guide-o" size="24" />
+        <view>联系商家</view>
+      </view>
+      <view bindtap="handleTap">
+        <van-icon name="friends-o" size="24" />
+        <view>联系客服</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "search": "/components/search/search",
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+    "sort": "/components/products_sort/index",
+    "scroll-prohucts": "/components/scroll-products/index"
+  }
 }

@@ -21,9 +21,10 @@
   display: flex;
   overflow-x: auto;
   margin: 10px 0;
-}
-.recommend_card .card{
- 
+
+  .card {
+    margin-right: 10px;
+  }
 }
 
 .recommend_img {

@@ -6,6 +6,6 @@ import {
 App({
 
   onShow() {
-    toast();
+  
   }
 })
